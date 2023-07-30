@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TXT Forma</title>
+    <!-- FontAwesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body background="background.png">
+    <div class="container">
+      <div class="options">
+        <!-- Text Format -->
+        <div id="bold">
+          <span id="boldtext">boldtext</span>
+        <button id="bold" class="option-button format">
+          <i class="fa-solid fa-bold"></i>
+        </button>
+        </div>
+        <div id="italic">
+          <span id="italic-style">italic-style</span>
+        <button id="italic" class="option-button format">
+          <i class="fa-solid fa-italic"></i>
+        </button>
+        </div>
+        <div id="underline">
+          <span id="under_line">under_line</span>
+        <button id="underline" class="option-button format">
+          <i class="fa-solid fa-underline"></i>
+        </button>
+        </div>
+        <div id="strikethrough">
+          <span id="strike_through">strike_through</span>
+        <button id="strikethrough" class="option-button format">
+          <i class="fa-solid fa-strikethrough"></i>
+        </button>
+        </div>
+        <div id="superscript">
+          <span id="super-script">super-script</span>
+        <button id="superscript" class="option-button script">
+          <i class="fa-solid fa-superscript"></i>
+        </button>
+        </div>
+        <div id="subscript">
+          <span id="sub-script">sub-script</span>
+        <button id="subscript" class="option-button script">
+          <i class="fa-solid fa-subscript"></i>
+        </button>
+        </div>
+
+        <!-- List -->
+        <div id="orderedlist">
+          <span id="ordered-list">ordered-list</span>
+        <button id="insertOrderedList" class="option-button">
+          <i class="fa-solid fa-list-ol"></i>
+        </button>
+        </div>
+        <div id="unorderedlist">
+          <span id="unordered-list">unordered-list</span>
+        <button id="insertUnorderedList" class="option-button">
+          <i class="fa-solid fa-list"></i>
+        </button>
+        </div>
+
+        <!-- Undo/Redo -->
+        <div id="undo">
+          <span id="Undo">Undo</span>
+        <button id="undo" class="option-button">
+          <i class="fa-solid fa-rotate-left"></i>
+        </button>
+        </div>
+        <div id="redo">
+          <span id="Redo">Redo</span>
+        <button id="redo" class="option-button">
+          <i class="fa-solid fa-rotate-right"></i>
+        </button>
+        </div>
+
+        <!-- Link -->
+        <div id="createlink">
+          <span id="create-link">create-link</span>
+        <button id="createlink" class="adv-option-button">
+          <i class="fa fa-link"></i>
+        </button>
+        </div>
+        <div id="unlink">
+          <span id="Unlink">Unlink</span>
+        <button id="unlink" class="option-button">
+          <i class="fa fa-unlink"></i>
+        </button>
+        </div>
+
+        <!-- Alignment -->
+        <div id="justifyleft">
+          <span id="justify_left">justify_left</span>
+        <button id="justifyLeft" class="option-button align">
+          <i class="fa-solid fa-align-left"></i>
+        </button>
+        </div>
+        <div id="justifycenter">
+          <span id="justify_center">justify_center</span>
+        <button id="justifyCenter" class="option-button align">
+          <i class="fa-solid fa-align-center"></i>
+        </button>
+        </div>
+        <div id="justifyright">
+          <span id="justify_right">justify_right</span>
+        <button id="justifyRight" class="option-button align">
+          <i class="fa-solid fa-align-right"></i>
+        </button>
+        </div>
+        <div id="justifyfull">
+          <span id="justify_full">justify_full</span>
+        <button id="justifyFull" class="option-button align">
+          <i class="fa-solid fa-align-justify"></i>
+        </button>
+        </div>
+        <div id="indent">
+          <span id="Indent">Indent</span>
+        <button id="indent" class="option-button spacing">
+          <i class="fa-solid fa-indent"></i>
+        </button>
+        </div>
+        <div id="outdent">
+          <span id="Outdent">Outdent</span>
+        <button id="outdent" class="option-button spacing">
+          <i class="fa-solid fa-outdent"></i>
+        </button>
+        </div>
+
+        <!-- Headings -->
+        <select id="formatBlock" class="adv-option-button">
+          <option value="H1">H1</option>
+          <option value="H2">H2</option>
+          <option value="H3">H3</option>
+          <option value="H4">H4</option>
+          <option value="H5">H5</option>
+          <option value="H6">H6</option>
+        </select>
+
+        <!-- Font -->
+        <select id="fontName" class="adv-option-button"></select>
+        <select id="fontSize" class="adv-option-button"></select>
+
+        <!-- Color -->
+        <div class="input-wrapper">
+          <input type="color" id="foreColor" class="adv-option-button" />
+          <label for="foreColor">Font Color</label>
+        </div>
+        <div class="input-wrapper">
+          <input type="color" id="backColor" class="adv-option-button" />
+          <label for="backColor">Highlight Color</label>
+        </div>
+        </div>
+      <div id="text-input" contenteditable="true"></div>
+    </div>
+    <!--Script-->
+    <script src="script.js"></script>
+  </body>
+</html>
